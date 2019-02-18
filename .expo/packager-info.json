@@ -2,7 +2,8 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://hw-ppr.dcast188.mobile.exp.direct",
+  "packagerNgrokUrl": "https://packager.hw-ppr.dcast188.mobile.exp.direct",
+  "ngrokPid": 8672,
+  "devToolsPort": 19002
 }

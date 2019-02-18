@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "Glimps",
-    "description": "",
+    "description": "Digital Darkroom.",
     "slug": "",
     "privacy": "public",
-    "sdkVersion": "25.0.0",
+    "sdkVersion": "31.0.0",
     "version": "1.0.0",
     "orientation": "landscape",
     "primaryColor": "#f7f7f7",
