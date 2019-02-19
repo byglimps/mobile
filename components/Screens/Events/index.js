@@ -72,7 +72,7 @@ export default class Events extends Component {
             {events.map(event => {
               return (
                 <TouchableOpacity
-                  key={event.id}
+                  key={event._id}
                   onPress={this.verifyEvent.bind(this, event)}
                 >
                   <EventCard

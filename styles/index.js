@@ -35,6 +35,7 @@ export default StyleSheet.create({
   },
 
   card: {
+    backgroundColor:"#fff",
     borderRadius: 10,
     marginVertical: 10,
     marginHorizontal: 1,

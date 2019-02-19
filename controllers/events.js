@@ -10,6 +10,7 @@ const getEvents = async () => {
     const {
       data: { data: events }
     } = await eventInstance.get("/api/events");
+
     return events;
   } catch (e) {
     throw new Error(e.message);
@@ -25,11 +26,11 @@ const verifyEvent = async (event, key) => {
     let {
       data: { data: token }
     } = await eventInstance.post(`/auth/tokens`, {
-      eventId: event.id,
+      eventId: event._id,
       secret: key
     });
 
-    await AsyncStorage.setItem("EVENT_ID", event.id);
+    await AsyncStorage.setItem("EVENT_ID", event._id);
     await AsyncStorage.setItem("EVENT_LOGO", event.logoUrl);
     await AsyncStorage.setItem("EVENT_MAIN_IMAGE", event.mainImageUrl);
     await AsyncStorage.setItem("EVENT_SLUG", event.slug);
